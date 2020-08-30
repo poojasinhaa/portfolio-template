@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+
+    <style>
+      /* Variables */
+      :root {
+        --primary-font: 'Poppins', sans-serif;
+        --light-grey: #D8D8D8; 
+      }
+
+      /* Common CSS */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0px;
+        font-family: var(--primary-font);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .col-equal {
+        flex: 1;
+      }
+
+      .text-large {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      .container {
+        padding: 50px 100px;
+      }
+
+      footer {
+        background-color: var(--light-grey);
+      }
+
+      /* Specific CSS */
+
+      nav#topnav {
+        padding: 0px 40px;
+        display: flex;
+        width: 100%;
+      }
+
+
+      nav#topnav .brand-container {
+        flex: 1;
+      }
+
+      nav#topnav .right-items {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        align-items: stretch;
+      }
+
+      nav#topnav .nav-item {
+        padding: 30px 20px;
+        font-size: 0.9rem;
+        display: inline-block;
+        color: #111;
+        transition: color .3s ease;
+      }
+
+      nav#topnav .nav-item:hover {
+        color: #555;
+        transition: color .3s ease;
+      }
+
+      .project-image {
+        background-color: var(--light-grey);
+      }
+
+      .project-description {
+        padding: 10px;
+      }
+      
+      .about-cover-image {
+        background-image: url(https://static.boredpanda.com/blog/wp-content/uploads/2019/05/shiba-inu-dog-flower-fields-photography-masayo-ishizuki-japan-15-5cdbf3618f37f__700.jpg);
+        height: 200px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="topnav">
+      <div class="brand-container display-inline-block font-secondary"></div>
+      <div class="right-items">
+        <a href="#work" class="nav-item">Work</a>
+        <a href="#project" class="nav-item">Project</a>
+        <a href="#about" class="nav-item">About</a>
+      </div>
+    </nav>
+
+    <section class="container header">
+      <div class="row">
+        <div class="col-equal">
+          <span class="text-large">Hello I'm John Doe</span>
+        </div>
+        <div class="col-equal">lore upsahdsaknd asd asd asd</div>
+      </div>
+    </section>
+
+    <section class="container work">
+      <h2>Work</h2>
+      <div class="row">
+        <div style="flex: 2">Work Work</div>
+        <div style="flex: 4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsa laboriosam saepe repudiandae doloribus, obcaecati voluptates voluptatem excepturi rem consectetur exercitationem iure vero quod modi quo aperiam quis similique soluta.<div>
+      </div>
+    </section>
+
+    <section class="container projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="row">
+          <div class="col-equal project-image">.</div>
+          <div class="col-equal project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorem, nesciunt ad odit tenetur </div>
+        </div>
+        <div class="row">
+          <div class="col-equal project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorem, nesciunt ad odit tenetur </div>
+          <div class="col-equal project-image">.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container about">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, veniam asperiores aperiam aliquid corporis ad animi corrupti provident temporibus aspernatur, sit recusandae laboriosam. Temporibus perferendis provident sit architecto? Ipsum, soluta?</p>
+      <div class="about-cover-image"></div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat neque, adipisci dolores dolore saepe numquam excepturi ratione non illum assumenda debitis nisi atque, itaque architecto blanditiis magnam rerum expedita omnis.
+    </section>
+    <footer class="container"></footer>
+  </body>
+</html>
