@@ -6,7 +6,7 @@
       /* Variables */
       :root {
         --primary-font: 'Poppins', sans-serif;
-        --light-grey: #D8D8D8; 
+        --light-grey: #f6f6f6; 
       }
 
       /* Common CSS */
@@ -19,6 +19,7 @@
       body {
         margin: 0px;
         font-family: var(--primary-font);
+        font-size: 1.1rem;
       }
 
       a {
@@ -34,12 +35,20 @@
       }
 
       .text-large {
-        font-size: 2.5rem;
+        font-size: 4.8rem;
         font-weight: bold;
       }
 
+      .text-dark-grey {
+        color: #999;
+      }
+
+      .text-medium-grey {
+        color: #6D6D6D;
+      }
+
       .container {
-        padding: 50px 100px;
+        padding: 50px 180px;
       }
 
       footer {
@@ -49,9 +58,10 @@
       /* Specific CSS */
 
       nav#topnav {
-        padding: 0px 40px;
+        padding: 0px 90px;
         display: flex;
         width: 100%;
+        font-size: 0.9rem;
       }
 
 
@@ -67,16 +77,56 @@
       }
 
       nav#topnav .nav-item {
-        padding: 30px 20px;
-        font-size: 0.9rem;
+        padding: 50px 40px 10px 40px;
         display: inline-block;
         color: #111;
         transition: color .3s ease;
+        letter-spacing: 6px;
       }
 
       nav#topnav .nav-item:hover {
         color: #555;
         transition: color .3s ease;
+      }
+
+      .grey-vector {
+        width: calc(100% - 300px);
+        height: 570px;
+        z-index: -1;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: var(--light-grey);
+      }
+
+      .header-description {
+        padding: 0px 0px 0px 50px;
+        border-left: 1px solid #D8D8D8;
+        line-height: 33px;
+        font-size: 0.9rem;
+      }
+
+      .download-cv-button {
+        background-color: #FFE8E8;
+        border: none;
+        color: #665D5D;
+        padding: 25px 38px;
+        font-size: 0.9rem;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 6px;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      .social-links {
+        padding: 20px 0px;
+      }
+
+      .social-links a {
+        color: #000;
+        padding: 10px;
+        letter-spacing: 6px;
       }
 
       .project-image {
@@ -100,18 +150,28 @@
     <nav id="topnav">
       <div class="brand-container display-inline-block font-secondary"></div>
       <div class="right-items">
-        <a href="#work" class="nav-item">Work</a>
-        <a href="#project" class="nav-item">Project</a>
-        <a href="#about" class="nav-item">About</a>
+        <a href="#work" class="nav-item">WORK</a>
+        <a href="#project" class="nav-item">PROJECT</a>
+        <a href="#about" class="nav-item">ABOUT</a>
       </div>
     </nav>
 
     <section class="container header">
-      <div class="row">
+      <div class="grey-vector"></div>
+      <div class="row" style="align-items: center">
         <div class="col-equal">
-          <span class="text-large">Hello I'm John Doe</span>
+          <span class="text-large text-dark-grey">Hello<br/> I'm John Doe</span>
+          <br/><a href="#" class="download-cv-button">DOWNLOAD CV</a>
         </div>
-        <div class="col-equal">lore upsahdsaknd asd asd asd</div>
+        <div class="col-equal text-medium-grey header-description">
+          A Sydney based frontend designer, working and living in Australia. I love to work on anything code, from designing simple HTML pages to solving complex problems. I love to illustrate as well. Recetly I won the award for best portfolio. Download the CV to know more about my background.
+          <br/>
+          <div class="social-links">
+            <a href="https://twitter.com/">TW.</a>
+            <a href="https://twitter.com/">IN.</a>
+            <a href="https://twitter.com/">FB.</a>
+          </div>
+        </div>
       </div>
     </section>
 
